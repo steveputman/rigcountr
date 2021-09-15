@@ -1,5 +1,5 @@
 Package: rigcountr
-Title: What the Package Does (One Line, Title Case)
+Title: Retrieves Baker Hughes rig count information
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Steve",
@@ -7,13 +7,18 @@ Authors@R:
            role = c("aut", "cre"),
            email = "steve.putman@gmail.com",
            comment = c(ORCID = "0000-0001-6721-2014"))
-Description: What the package does (one paragraph).
+Description: This package provides a series of functions to retrieve Baker Hughes rig-count information, parse the Excel-provided data, and return the information in data frames.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Imports: 
-    magrittr
+    dplyr,
+    httr,
+    magrittr,
+    rvest
 URL: https://github.com/steveputman/rigcountr
 BugReports: https://github.com/steveputman/rigcountr/issues
+Suggests: 
+    readxlsb
